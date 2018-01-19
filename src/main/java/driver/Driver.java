@@ -35,6 +35,10 @@ public class Driver {
     instance = null;
   }
 
+  public static String getUrl() {
+    return url;
+  }
+
   private WebDriver setUpDriver() {
     WebDriver driver = null;
 
