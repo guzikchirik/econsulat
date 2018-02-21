@@ -3,16 +3,17 @@ package pageobjects;
 
 import driver.Driver;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
+import ru.yandex.qatools.htmlelements.loader.HtmlElementLoader;
 
 public abstract class BasePage {
-  private final WebDriver driver;
 
-  public BasePage(){
-    driver = Driver.getInstance().getDriver();
+  private final WebDriver driver = Driver.getInstance().getDriver();
+
+  public BasePage() {
+    HtmlElementLoader.populatePageObject(this, driver);
   }
 
-  public void refresh(){
+  public void refresh() {
     driver.navigate().refresh();
   }
 

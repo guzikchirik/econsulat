@@ -19,7 +19,7 @@ public class SearchArrow extends HtmlElement{
 
   @Name("Search button")
   @FindBy(xpath = "/html/body/div[1]/div[3]/div[2]/eflll/div[5]/div/div[2]/div/div[2]/div/form/div[2]/button")
-  private myButton searchButton;
+  private Button searchButton;
 
   public void search(String request) {
     requestInput.sendKeys(request);
