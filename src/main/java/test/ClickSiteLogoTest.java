@@ -9,9 +9,11 @@ public class ClickSiteLogoTest extends AbstractTest {
 
   @Test(description = "1. Click site logo")
   public void clickSiteLogo() {
-    page.selectLanguage();
-    page.selectCountry();
-    page.selectEmbassy();
+    mainPage.selectLanguage();
+    mainPage.selectCountry();
+    mainPage.selectEmbassy();
+    mainPage.selectFillBlank();
+
   }
 
 }
