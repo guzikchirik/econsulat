@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53ed0ec0-7837-4bf0-a32e-801fd8c73b9c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/generalconsulateingrodno/Questionary.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/driver/Driver$1.class" afterPath="$PROJECT_DIR$/target/classes/driver/Driver$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/driver/Driver$Browser.class" afterPath="$PROJECT_DIR$/target/classes/driver/Driver$Browser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/driver/Driver.class" afterPath="$PROJECT_DIR$/target/classes/driver/Driver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageobjects/EconsulatMainPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/EconsulatMainPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/ClickSiteLogoTest.java" afterPath="$PROJECT_DIR$/src/main/java/test/ClickSiteLogoTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -524,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519401022913</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first part of questionare">
+      <created>1519656028908</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1519656028908</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -624,7 +628,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="before questionnaire" />
-    <option name="LAST_COMMIT_MESSAGE" value="before questionnaire" />
+    <MESSAGE value="first part of questionare" />
+    <option name="LAST_COMMIT_MESSAGE" value="first part of questionare" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
