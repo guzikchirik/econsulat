@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.FluentWait;
 import pageobjects.generalconsulateingrodno.GeneralConsulateInGrodno;
+import pageobjects.generalconsulateingrodno.Questionary;
 import ru.yandex.qatools.htmlelements.annotations.Name;
 import ru.yandex.qatools.htmlelements.element.Link;
 import ru.yandex.qatools.htmlelements.element.Select;
@@ -40,6 +41,10 @@ public class EconsulatMainPage extends BasePage{
   @FindBy(xpath = ".//*[contains(@id, 'hlWypelnienieKrajowa')]")
   private Link nationalVisaFillBlankLink;
 
+  @Name("Questionary")
+  @FindBy(id = "cp_f_panelFormularz")
+  private Questionary questionary;
+
   public void selectCountry(){
     selectCountry.selectByValue("6");
   }
@@ -54,5 +59,9 @@ public class EconsulatMainPage extends BasePage{
 
   public void selectFillBlank(){
     nationalVisaFillBlankLink.click();
+  }
+
+  public Questionary getQuestionary() {
+    return questionary;
   }
 }
