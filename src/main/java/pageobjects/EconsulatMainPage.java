@@ -1,14 +1,7 @@
 package pageobjects;
 
-import java.util.concurrent.TimeUnit;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.FluentWait;
-import pageobjects.generalconsulateingrodno.GeneralConsulateInGrodno;
-import pageobjects.generalconsulateingrodno.Questionary;
+import pageobjects.generalconsulateingrodno.Questionnaire;
 import ru.yandex.qatools.htmlelements.annotations.Name;
 import ru.yandex.qatools.htmlelements.element.Link;
 import ru.yandex.qatools.htmlelements.element.Select;
@@ -41,9 +34,9 @@ public class EconsulatMainPage extends BasePage{
   @FindBy(xpath = ".//*[contains(@id, 'hlWypelnienieKrajowa')]")
   private Link nationalVisaFillBlankLink;
 
-  @Name("Questionary")
+  @Name("Questionnaire")
   @FindBy(id = "cp_f_panelFormularz")
-  private Questionary questionary;
+  private Questionnaire questionnaire;
 
   public void selectCountry(){
     selectCountry.selectByValue("6");
@@ -61,7 +54,7 @@ public class EconsulatMainPage extends BasePage{
     nationalVisaFillBlankLink.click();
   }
 
-  public Questionary getQuestionary() {
-    return questionary;
+  public Questionnaire getQuestionnaire() {
+    return questionnaire;
   }
 }

@@ -13,7 +13,7 @@ import ru.yandex.qatools.htmlelements.element.TextInput;
 /**
  * Created by Anton_Chyrko on 2/26/2018.
  */
-public class Questionary extends HtmlElement {
+public class Questionnaire extends HtmlElement {
 
   @Name("1. Surname (s) (family name(s))")
   @FindBy(id = "cp_f_daneOs_txtNazwisko")
@@ -89,7 +89,7 @@ public class Questionary extends HtmlElement {
 
   @Name("18. Residence in a country other than the country of current nationality")
   @FindBy(id = "cp_f_rbl18_0")
-  private Select residentOfCountry;
+  private TextInput residentOfCountry;
 
   @Name("19. Current occupation")
   @FindBy(id = "cp_f_ddl19WykonywanyZawod")
@@ -206,7 +206,7 @@ public class Questionary extends HtmlElement {
   }
 
   public void setNoResidentOfCountry() {
-    residentOfCountry.selectByValue("Nie");
+    residentOfCountry.click();
   }
 
   public void setCurrentOccupation(Occupation occupation) {

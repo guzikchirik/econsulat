@@ -5,17 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import pageobjects.EconsulatMainPage;
-import pageobjects.generalconsulateingrodno.GeneralConsulateInGrodno;
 
 public abstract class AbstractTest {
 
-  public WebDriver getDriver() {
-    return driver;
-  }
-
-  private WebDriver driver;
   protected EconsulatMainPage mainPage;
-  protected GeneralConsulateInGrodno pageGenConsulatGrodno;
+  private WebDriver driver;
 
   @BeforeTest(alwaysRun = true)
   public void loadPage() {
@@ -29,5 +23,7 @@ public abstract class AbstractTest {
     driver.close();
   }
 
-
+  public WebDriver getDriver() {
+    return driver;
+  }
 }

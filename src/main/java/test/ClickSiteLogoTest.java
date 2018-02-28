@@ -1,10 +1,10 @@
 package test;
 
 import org.testng.annotations.Test;
-import pageobjects.generalconsulateingrodno.Questionary.MartialStatus;
-import pageobjects.generalconsulateingrodno.Questionary.Occupation;
-import pageobjects.generalconsulateingrodno.Questionary.Sex;
-import pageobjects.generalconsulateingrodno.Questionary.TypeOfTravelDocument;
+import pageobjects.generalconsulateingrodno.Questionnaire.MartialStatus;
+import pageobjects.generalconsulateingrodno.Questionnaire.Occupation;
+import pageobjects.generalconsulateingrodno.Questionnaire.Sex;
+import pageobjects.generalconsulateingrodno.Questionnaire.TypeOfTravelDocument;
 
 /**
  * Created by Anton_Chyrko on 2/21/2018.
@@ -18,35 +18,35 @@ public class ClickSiteLogoTest extends AbstractTest {
     mainPage.selectEmbassy();
     mainPage.selectFillBlank();
 
-    mainPage.getQuestionary().setSurname("Chyrko");
-    mainPage.getQuestionary().setSurnameAtBirth("Chyrko");
-    mainPage.getQuestionary().setFirstName("Anton");
-    mainPage.getQuestionary().setDateOfBirth("1991-04-07");
-    mainPage.getQuestionary().setPlaceOfBirth("Novoaltaisk");
-    mainPage.getQuestionary().setCountryOfBirth("RUS");
-    mainPage.getQuestionary().setCurrentNationality("BLR");
-    mainPage.getQuestionary().setOriginalNationality("BLR");
-    mainPage.getQuestionary().setSex(Sex.MALE);
-    mainPage.getQuestionary().setMartialStatus(MartialStatus.MARRIED);
-    mainPage.getQuestionary().setNationalIdentityNumber("1234567A123AA1");
-    mainPage.getQuestionary().setTypeOfTravelDocument(TypeOfTravelDocument.ORDINARY_PASSPORT);
-    mainPage.getQuestionary().setNumberOfTravelDocument("1234567A123AA1");
-    mainPage.getQuestionary().setDateOfIssue("1991-04-07");
-    mainPage.getQuestionary().setValidUntil("1991-04-07");
-    mainPage.getQuestionary().setIssuedBy("Some text");
-    mainPage.getQuestionary().setCheckboxDoesNotApply();
+    mainPage.getQuestionnaire().setSurname("Chyrko");
+    mainPage.getQuestionnaire().setSurnameAtBirth("Chyrko");
+    mainPage.getQuestionnaire().setFirstName("Anton");
+    mainPage.getQuestionnaire().setDateOfBirth("1991-04-07");
+    mainPage.getQuestionnaire().setPlaceOfBirth("Novoaltaisk");
+    mainPage.getQuestionnaire().setCountryOfBirth("RUS");
+    mainPage.getQuestionnaire().setCurrentNationality("BLR");
+    mainPage.getQuestionnaire().setOriginalNationality("BLR");
+    mainPage.getQuestionnaire().setSex(Sex.MALE);
+    mainPage.getQuestionnaire().setMartialStatus(MartialStatus.MARRIED);
+    mainPage.getQuestionnaire().setNationalIdentityNumber("1234567A123AA1");
+    mainPage.getQuestionnaire().setTypeOfTravelDocument(TypeOfTravelDocument.ORDINARY_PASSPORT);
+    mainPage.getQuestionnaire().setNumberOfTravelDocument("1234567A123AA1");
+    mainPage.getQuestionnaire().setDateOfIssue("1991-04-07");
+    mainPage.getQuestionnaire().setValidUntil("1991-04-07");
+    mainPage.getQuestionnaire().setIssuedBy("Some text");
+    mainPage.getQuestionnaire().setCheckboxDoesNotApply();
 
-    mainPage.getQuestionary().getApplicantsHomeAddressAndEmailAddress().setCountry("BLR");
-    mainPage.getQuestionary().getApplicantsHomeAddressAndEmailAddress().setStateOrPorvince("BLR");
-    mainPage.getQuestionary().getApplicantsHomeAddressAndEmailAddress().setPlace("BLR");
-    mainPage.getQuestionary().getApplicantsHomeAddressAndEmailAddress().setPostalCode("BLR");
-    mainPage.getQuestionary().getApplicantsHomeAddressAndEmailAddress().setAddress("BLR");
-    mainPage.getQuestionary().getApplicantsHomeAddressAndEmailAddress().setEmail("BLR");
-    mainPage.getQuestionary().getApplicantsHomeAddressAndEmailAddress().setPhoneAreaCode("BLR");
-    mainPage.getQuestionary().getApplicantsHomeAddressAndEmailAddress().setPhoneNumber("BLR");
+    mainPage.getQuestionnaire().getApplicantsHomeAddressAndEmailAddress().setCountry("BLR");
+    mainPage.getQuestionnaire().getApplicantsHomeAddressAndEmailAddress().setStateOrPorvince("BLR");
+    mainPage.getQuestionnaire().getApplicantsHomeAddressAndEmailAddress().setPlace("BLR");
+    mainPage.getQuestionnaire().getApplicantsHomeAddressAndEmailAddress().setPostalCode("BLR");
+    mainPage.getQuestionnaire().getApplicantsHomeAddressAndEmailAddress().setAddress("BLR");
+    mainPage.getQuestionnaire().getApplicantsHomeAddressAndEmailAddress().setEmail("BLR");
+    mainPage.getQuestionnaire().getApplicantsHomeAddressAndEmailAddress().setPhoneAreaCode("BLR");
+    mainPage.getQuestionnaire().getApplicantsHomeAddressAndEmailAddress().setPhoneNumber("BLR");
 
-    mainPage.getQuestionary().setNoResidentOfCountry();
-    mainPage.getQuestionary().setCurrentOccupation(Occupation.MANAGER);
+    mainPage.getQuestionnaire().setNoResidentOfCountry();
+    mainPage.getQuestionnaire().setCurrentOccupation(Occupation.MANAGER);
 
   }
 

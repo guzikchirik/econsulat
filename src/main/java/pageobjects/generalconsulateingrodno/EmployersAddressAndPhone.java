@@ -105,7 +105,7 @@ public class EmployersAddressAndPhone extends HtmlElement {
     this.phoneNumber.sendKeys(phoneNumber);
   }
 
-  public void setName(String name) {
+  public void setNameOfEmployee(String name) {
     this.name.clear();
     this.name.sendKeys(name);
   }
