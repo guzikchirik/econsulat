@@ -127,11 +127,11 @@ public class EmployersAddressAndPhone extends HtmlElement {
 
   public enum State {
     BELARUS("BLR"),
-    MARRIED("ZZ"),
-    SEPARATED("SP"),
-    DIVORCED("RR"),
-    WIDOW("WW"),
-    OTHER("IN");
+    CANADA("CAN"),
+    CHINA("CHN"),
+    RUSSIAN_FEDERATION("RUS"),
+    SPAIN("ESP"),
+    UKRAINE("UKR");
 
     private String value;
 

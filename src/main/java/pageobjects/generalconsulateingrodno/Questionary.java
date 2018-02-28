@@ -99,7 +99,9 @@ public class Questionary extends HtmlElement {
   @FindBy(xpath = ".//table[@id='cp_f_rbl20']/parent::td")
   private EmployersAddressAndPhone employersAddressAndPhone;
 
-
+  public EmployersAddressAndPhone getEmployersAddressAndPhone() {
+    return employersAddressAndPhone;
+  }
 
   public ApplicantsHomeAddressAndEmailAddress getApplicantsHomeAddressAndEmailAddress() {
     return applicantsHomeAddressAndEmailAddress;
