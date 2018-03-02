@@ -99,6 +99,26 @@ public class Questionnaire extends HtmlElement {
   @FindBy(xpath = ".//table[@id='cp_f_rbl20']/parent::td")
   private EmployersAddressAndPhone employersAddressAndPhone;
 
+  @Name("21. Main purpose(s) of the journey:")
+  @FindBy(id = "cp_f_rbl29")
+  private Table mainPurposeOfJourney;
+
+  @Name("23. Member State of first entry")
+  @FindBy(id = "cp_f_ddl23PierwszyWjazd")
+  private Select stateOfFirstEntry;
+
+  @Name("24. Number of entries requested ")
+  @FindBy(id = "cp_f_rbl24")
+  private Table numberOfEntriesRequested;
+
+  @Name("25. Duration of stay: ")
+  @FindBy(id = "cp_f_txt25OkresPobytu")
+  private TextInput durationOfStay;
+
+
+
+
+
   public EmployersAddressAndPhone getEmployersAddressAndPhone() {
     return employersAddressAndPhone;
   }
@@ -213,6 +233,37 @@ public class Questionnaire extends HtmlElement {
     this.currentOccupation.selectByValue(occupation.getValue());
   }
 
+  public void setMainPurposeOfJourney(PurposeOfJourney actualPurposeOfJourney) {
+    for (int i = 0; i < this.mainPurposeOfJourney.getRows().size(); i++) {
+      WebElement option = this.mainPurposeOfJourney.getRows().get(i).get(0)
+          .findElements(By.cssSelector("input"))
+          .get(0);
+      if (option.getAttribute("value").equals(actualPurposeOfJourney.getValue())) {
+        option.click();
+      }
+    }
+  }
+
+  public void setStateOfFirstEntry(Country country) {
+    this.stateOfFirstEntry.selectByValue(country.getValue());
+  }
+
+  public void setNumberOfEntriesRequested(NumberOfEntriesRequested actualNumberOfEntriesRequested) {
+    for (int i = 0; i < this.numberOfEntriesRequested.getRows().size(); i++) {
+      WebElement option = this.numberOfEntriesRequested.getRows().get(i).get(0)
+          .findElements(By.cssSelector("input"))
+          .get(0);
+      if (option.getAttribute("value").equals(actualNumberOfEntriesRequested.getValue())) {
+        option.click();
+      }
+    }
+  }
+
+
+  public void setDurationOfStay(String durationOfStay) {
+    this.durationOfStay.clear();
+    this.durationOfStay.sendKeys(durationOfStay);
+  }
 
 
 
@@ -232,6 +283,47 @@ public class Questionnaire extends HtmlElement {
 
 
 
+
+
+
+
+  public enum NumberOfEntriesRequested {
+    SINGLE_ENTRY("1"),
+    TWO_ENTRIES("2"),
+    MULTIPLE_ENTRIES("3");
+
+    private String value;
+
+    NumberOfEntriesRequested(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+  }
+
+  public enum PurposeOfJourney {
+    TOURISM("1"),
+    BUSINESS("2"),
+    VISIT_TO_FAMILY_OR_FRIENDS("3"),
+    CULTURAL("4"),
+    SPORTS("5"),
+    OFFICIAL_VISIT("6"),
+    MEDICAL_REASON("7"),
+    MEDICAL_REASONSTUDY("8"),
+    OTHER("11");
+
+    private String value;
+
+    PurposeOfJourney(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+  }
 
   public enum Sex {
     MALE("M"),
@@ -298,6 +390,27 @@ public class Questionnaire extends HtmlElement {
     private String value;
 
     Occupation(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+  }
+
+  public enum Country {
+    AUSTRIA("AUT"),
+    BELGIUM("BEL"),
+    CZECH_REPUBLIC("CZE"),
+    FRANCE("FRA"),
+    SPAIN("ESP"),
+    POLAND("POL"),
+    BELARUS("BLR"),
+    SWEDEN("SWE");
+
+    private String value;
+
+    Country(String value) {
       this.value = value;
     }
 

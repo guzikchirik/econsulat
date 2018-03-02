@@ -1,8 +1,11 @@
 package test;
 
 import org.testng.annotations.Test;
+import pageobjects.generalconsulateingrodno.Questionnaire.Country;
 import pageobjects.generalconsulateingrodno.Questionnaire.MartialStatus;
+import pageobjects.generalconsulateingrodno.Questionnaire.NumberOfEntriesRequested;
 import pageobjects.generalconsulateingrodno.Questionnaire.Occupation;
+import pageobjects.generalconsulateingrodno.Questionnaire.PurposeOfJourney;
 import pageobjects.generalconsulateingrodno.Questionnaire.Sex;
 import pageobjects.generalconsulateingrodno.Questionnaire.TypeOfTravelDocument;
 
@@ -47,6 +50,11 @@ public class ClickSiteLogoTest extends AbstractTest {
 
     mainPage.getQuestionnaire().setNoResidentOfCountry();
     mainPage.getQuestionnaire().setCurrentOccupation(Occupation.MANAGER);
+    mainPage.getQuestionnaire().setMainPurposeOfJourney(PurposeOfJourney.TOURISM);
+    mainPage.getQuestionnaire().setStateOfFirstEntry(Country.POLAND);
+    mainPage.getQuestionnaire().setNumberOfEntriesRequested(
+        NumberOfEntriesRequested.MULTIPLE_ENTRIES);
+mainPage.getQuestionnaire().setDurationOfStay("360");
 
   }
 
