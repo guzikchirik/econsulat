@@ -1,6 +1,7 @@
 package test;
 
 import org.testng.annotations.Test;
+import pageobjects.EconsulatMainPage.Language;
 import pageobjects.generalconsulateingrodno.Questionnaire.Country;
 import pageobjects.generalconsulateingrodno.Questionnaire.MartialStatus;
 import pageobjects.generalconsulateingrodno.Questionnaire.NumberOfEntriesRequested;
@@ -16,7 +17,7 @@ public class ClickSiteLogoTest extends AbstractTest {
 
   @Test(description = "1. Click site logo")
   public void clickSiteLogo() {
-    mainPage.selectLanguage();
+    mainPage.selectLanguage("Russian");//TODO Change to enum in the nearest future
     mainPage.selectCountry();
     mainPage.selectEmbassy();
     mainPage.selectFillBlank();

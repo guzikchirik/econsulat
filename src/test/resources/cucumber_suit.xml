@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="suiteCucumber" verbose="1">
+  <test name="Econsulat_Test_Cucumber">
+    <classes>
+      <class name="cucumber.tests.SelectLanguageTest"/>
+    </classes>
+  </test>
+</suite>
