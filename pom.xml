@@ -28,15 +28,16 @@
     <checkstyle.version>7.8.2</checkstyle.version>
     <apache.lang.version>3.6</apache.lang.version>
     <allure.version>2.0-BETA21</allure.version>
+    <jackson.xml.version>2.9.4</jackson.xml.version>
   </properties>
 
   <build>
     <plugins>
-      <!--<plugin>-->
-        <!--<groupId>io.qameta.allure</groupId>-->
-        <!--<artifactId>allure-maven</artifactId>-->
-        <!--<version>${maven.allure.plugin}</version>-->
-      <!--</plugin>-->
+      <plugin>
+        <groupId>io.qameta.allure</groupId>
+        <artifactId>allure-maven</artifactId>
+        <version>${maven.allure.plugin}</version>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -55,9 +56,10 @@
           <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
           <testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory>
 
-          <!--<argLine>-->
-            <!-- -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
-          <!--</argLine>-->
+          <argLine>
+             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+          </argLine>
+
           <suiteXmlFiles>
             <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
             <suiteXmlFile>src/main/resources/cucumber_suit.xml</suiteXmlFile>
@@ -82,21 +84,21 @@
   </build>
 
   <dependencies>
-    <!--<dependency>-->
-      <!--<groupId>org.aspectj</groupId>-->
-      <!--<artifactId>aspectjweaver</artifactId>-->
-      <!--<version>${aspectj.version}</version>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-      <!--<groupId>org.aspectj</groupId>-->
-      <!--<artifactId>aspectjrt</artifactId>-->
-      <!--<version>${aspectj.version}</version>-->
-    <!--</dependency>-->
-    <!--<dependency>-->
-      <!--<groupId>io.qameta.allure</groupId>-->
-      <!--<artifactId>allure-testng</artifactId>-->
-      <!--<version>${allure.version}</version>-->
-    <!--</dependency>-->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>${aspectj.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>${aspectj.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-testng</artifactId>
+      <version>${allure.version}</version>
+    </dependency>
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
@@ -148,6 +150,12 @@
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
       <version>20160810</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-xml</artifactId>
+      <version>${jackson.xml.version}</version>
     </dependency>
 
   </dependencies>
