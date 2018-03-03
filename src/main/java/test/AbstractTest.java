@@ -20,7 +20,7 @@ public abstract class AbstractTest {
 
   @AfterTest(alwaysRun = true)
   public void tearDown() {
-    driver.close();
+    mainPage = null;//TODO it is unnecessary action
   }
 
   public WebDriver getDriver() {
