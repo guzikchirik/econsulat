@@ -54,12 +54,13 @@
         <configuration>
           <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
           <testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory>
+
           <!--<argLine>-->
             <!-- -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"-->
           <!--</argLine>-->
           <suiteXmlFiles>
             <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
-            <suiteXmlFile>src/test/resources/cucumber_suit.xml</suiteXmlFile>
+            <suiteXmlFile>src/main/resources/cucumber_suit.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>

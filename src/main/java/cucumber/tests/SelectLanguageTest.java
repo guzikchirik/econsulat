@@ -13,7 +13,7 @@ import pageobjects.EconsulatMainPage;
  */
 
 @CucumberOptions(plugin = {"json:target/cucumber-report.json",
-    "html:target/cucumber-report"}, features = "src/test/resources/cucumberfeatures/selectLanguage.feature",
+    "html:target/cucumber-report"}, features = "src/main/resources/cucumberfeatures/selectLanguage.feature",
     glue = "")
 public class SelectLanguageTest extends AbstractTestNGCucumberTests {
 

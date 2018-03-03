@@ -1,7 +1,6 @@
 package test;
 
 import org.testng.annotations.Test;
-import pageobjects.EconsulatMainPage.Language;
 import pageobjects.generalconsulateingrodno.Questionnaire.Country;
 import pageobjects.generalconsulateingrodno.Questionnaire.MartialStatus;
 import pageobjects.generalconsulateingrodno.Questionnaire.NumberOfEntriesRequested;
@@ -55,7 +54,7 @@ public class ClickSiteLogoTest extends AbstractTest {
     mainPage.getQuestionnaire().setStateOfFirstEntry(Country.POLAND);
     mainPage.getQuestionnaire().setNumberOfEntriesRequested(
         NumberOfEntriesRequested.MULTIPLE_ENTRIES);
-mainPage.getQuestionnaire().setDurationOfStay("360");
+    mainPage.getQuestionnaire().setDurationOfStay("360");
 
   }
 
