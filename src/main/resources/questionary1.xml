@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<questionnaire xmlns="econsulat/created_questionnaire">
+<item name="country of birth">
+<input>rus</input>
+</item>
+<item name="issued by">
+<input>some text</input>
+</item>
+<item name="martial status">
+<input>married</input>
+</item>
+<item name="sex">
+<input>male</input>
+</item>
+<item name="place of birth">
+<input>Novoaltaisk</input>
+</item>
+<item name="original nationality">
+<input>blr</input>
+</item>
+<item name="national identity number">
+<input>1234567A123AA1</input>
+</item>
+<item name="first name">
+<input>Anton</input>
+</item>
+<item name="surname">
+<input>Chyrko</input>
+</item>
+<item name="current nationality">
+<input>blr</input>
+</item>
+<item name="surname at birth">
+<input>Chyrko</input>
+</item>
+<item name="valid until">
+<input>1991-04-07</input>
+</item>
+<item name="date of birth">
+<input>1991-04-07</input>
+</item>
+<item name="date of issue">
+<input>1991-04-07</input>
+</item>
+</questionnaire>

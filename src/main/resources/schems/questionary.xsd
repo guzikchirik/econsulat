@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="econsulat/questionary"
+  xmlns:tns="econsulat/questionary"
+  elementFormDefault="qualified"
+  attributeFormDefault="unqualified">
+
+  <element name="questionary">
+    <complexType>
+      <sequence>
+        <element name="item" type="tns:ItemType" minOccurs="1" maxOccurs="15"/>
+      </sequence>
+    </complexType>
+  </element>
+
+  <complexType name="ItemType">
+    <sequence>
+      <element name="TextInput" type="tns:TextInput" minOccurs="0"/>
+      <element name="Select" type="tns:Select" minOccurs="0"/>
+    </sequence>
+    <attribute name="description" type="string" use="required"/>
+    <attribute name="name" type="string" use="required"/>
+  </complexType>
+
+  <simpleType name="TextInput">
+    <restriction base="string">
+      <pattern value="[-_a-zA-Z]+"/>
+    </restriction>
+  </simpleType>
+
+  <simpleType name="Select">
+    <restriction base="string">
+      <pattern value="[-_a-zA-Z]+"/>
+    </restriction>
+  </simpleType>
+
+
+</schema>

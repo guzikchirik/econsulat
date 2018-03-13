@@ -61,7 +61,7 @@
           </argLine>
 
           <suiteXmlFiles>
-            <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
+            <!--<suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>-->
             <suiteXmlFile>src/main/resources/cucumber_suit.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>

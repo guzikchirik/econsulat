@@ -1,0 +1,14 @@
+surname=Chyrko
+surname at birth=Chyrko
+first name=Anton
+date of birth=1991-04-07
+place of birth=Novoaltaisk
+country of birth=rus
+current nationality=blr
+original nationality=blr
+sex=male
+martial status=married
+national identity number=1234567A123AA1
+date of issue=1991-04-07
+valid until=1991-04-07
+issued by=some text

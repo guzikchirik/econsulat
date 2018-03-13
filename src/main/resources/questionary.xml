@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questionary xmlns="econsulat/questionary"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="econsulat/questionary schems/questionary.xsd">
+  <item description="1. Surname (s) (family name(s)) " name="surname">
+    <TextInput>Chyrko</TextInput>
+  </item>
+  <item description="2. Surname (s) at birth (previously used surname (s))" name="surname at birth">
+    <TextInput>Chyrko</TextInput>
+  </item>
+  <item description="3. First name(s)" name="first name">
+    <TextInput>Chyrko</TextInput>
+  </item>
+  <item description="4. Date of birth (year-month-day)" name="date of birth">
+    <TextInput>Chyrko</TextInput>
+  </item>
+  <item description="5. Place of birth" name="place of birth">
+    <TextInput>Chyrko</TextInput>
+  </item>
+  <item description="6. Country of birth" name="country of birth">
+    <TextInput>Chyrko</TextInput>
+  </item>
+  <item description="7. Current nationality/ies" name="current nationality">
+    <TextInput>Chyrko</TextInput>
+  </item>
+  <item description="Original nationality (nationality at birth)" name="original nationality">
+    <TextInput>Chyrko</TextInput>
+  </item>
+
+  <item description="8. Sex" name="sex">
+    <Select>Chyrko</Select>
+  </item>
+  <item description="9. Martial status" name="martial statu">
+    <Select>Chyrko</Select>
+  </item>
+
+
+</questionary>
