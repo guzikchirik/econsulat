@@ -21,12 +21,7 @@ public class Main {
 //        .phone("+375297721991").build();
 //    System.out.println(user.toString());
 //
-//    //decorator pattern
-//    Car car = new BaseConfigurationCar();
-//    System.out.println("Description = " + car.getDescription() + " price = " + car.getPrice());
-//    car = new AlloyWheels(new Leather(car));
-//    System.out.println("Description = " + car.getDescription() + " price = " + car.getPrice());
-//
+
     //factory method pattern
     TransportCreator creator = setTransportByName("train");
     Transport transport = creator.createTransport();
