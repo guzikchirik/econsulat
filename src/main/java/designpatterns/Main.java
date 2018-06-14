@@ -16,11 +16,7 @@ import java.util.NoSuchElementException;
 public class Main {
 
   public static void main(String[] args) {
-//    //builder pattern
-//    User user = new User.UserBuilder("Anton", "Chyrko").age(26).address("Denisovskaya streat")
-//        .phone("+375297721991").build();
-//    System.out.println(user.toString());
-//
+
 //    //decorator pattern
 //    Car car = new BaseConfigurationCar();
 //    System.out.println("Description = " + car.getDescription() + " price = " + car.getPrice());
