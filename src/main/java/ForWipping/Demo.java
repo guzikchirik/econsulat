@@ -21,6 +21,7 @@ public class Demo {
     Laptop laptop = new Laptop();
     SmartPhone smartPhone = new SmartPhone();
 
+    Surfable surfable = new EBook();
     List<Surfable> surfableDevices = new ArrayList<>();
     List<Playable> playableDevices = new ArrayList<>();
 
@@ -29,6 +30,11 @@ public class Demo {
 
     surfableDevices.forEach(Surfable::surf);
     playableDevices.forEach(Playable::play);
+ 
 
+  }
+  
+  public static void wqrgahg( List<Surfable> list){
+  
   }
 }

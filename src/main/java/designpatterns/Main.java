@@ -5,6 +5,7 @@ import designpatterns.abstractfactory.factories.ElfSquadronFactory;
 import designpatterns.abstractfactory.factories.HumanSquadronFactory;
 import designpatterns.factorymethod.CreateTransportShip;
 import designpatterns.factorymethod.CreateTransportTrain;
+import designpatterns.factorymethod.Transport;
 import designpatterns.factorymethod.TransportCreator;
 import designpatterns.prototype.figuresImpl.Circle;
 import java.util.NoSuchElementException;
@@ -26,10 +27,10 @@ public class Main {
 //    car = new AlloyWheels(new Leather(car));
 //    System.out.println("Description = " + car.getDescription() + " price = " + car.getPrice());
 //
-//    //factory method pattern
-//    TransportCreator creator = setTransportByName("train");
-//    Transport transport = creator.createTransport();
-//    transport.deliver();
+    //factory method pattern
+    TransportCreator creator = setTransportByName("train");
+    Transport transport = creator.createTransport();
+    transport.deliver();
 //
 ////    //for factory pattern
 ////    CarFactory factory = new CarFactory();
